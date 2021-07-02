@@ -9,18 +9,28 @@ console.log(Math.PI);
 // Tip: de formule is omtrek = diameter * pi
 // ---- Verwachte uitkomst: 12.566370614359172
 
+const circle = 4 * Math.PI;
+console.log(circle);
+
+// function circle(eenheid) {
+//     return eenheid * Math.PI;
+// }
+// console.log(circle(4));
 
 /* Opdracht 2: */
 // Bereken de omtrek van een cirkel met een diameter van 12 en rond dit af naar een heel getal. Log dit in de terminal.
 // ---- Verwachte uitkomst: 38
 
+const roundOmtrek = Math.round(12 * Math.PI);
+console.log(roundOmtrek)
 
 
 /* Opdracht 3: */
 // Bereken de wortel van 9 en log dit in de terminal
 // ---- Verwachte uitkomst: 3
 
-
+const carrot = Math.sqrt(9);
+console.log(carrot);
 
 /* Opdracht 4: */
 // Genereer een willekeurig getal tussen de 0 en 1 en doe dan een check:
@@ -28,3 +38,11 @@ console.log(Math.PI);
 // * is het willekeurige getal kleiner dan 0.5 ? Log dan het getal met "Het glas is half leeg" in de terminal
 // Tip: iedere keer als je het script opnieuw draait (wel even een extra spatie toevoegen o.i.d.) is dit getal anders ;)
 // ---- Verwachte uitkomst: Bijbehorende zin afhankelijk van de uitkomst
+
+const randomNumber = Math.random();
+
+if ( randomNumber >= 0.5 ) {
+    console.log("Het glas is halfvol")
+} else {
+    console.log("Het glas is half leeg")
+}
